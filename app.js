@@ -2,10 +2,8 @@
 const fs = require("fs");
 const request = require("request");
 
-//Simple Node Command Line App 
 if(process.argv.length >= 3 )
 {
-  let allKeyWords = [];
   if(process.argv[2] !== "leaderboard")
   {
       const searchKeyWord = process.argv[2];
@@ -37,6 +35,7 @@ if(process.argv.length >= 3 )
                       console.log(err);
                       return; 
                     }
+                    // also attach the searchkeyword to the result if not already there 
                     console.log("Data is appended to file successfully.");
                   });
                 }
@@ -52,7 +51,7 @@ if(process.argv.length >= 3 )
   }
   else
   {
-    console.log("Leaderboard\n:");
+    console.log("Leaderboard:\n");
   }
 }
 else
@@ -60,10 +59,3 @@ else
   console.log("Must provide either a search keyword or the \"leaderboard\" flag");
 }
 
-/*
-  how I can do leader board:
-  store the search keyowrds in an array or a collection in general
-  If collection.length > 0 then save the number of results f first search as max_res and it as max_search
-  loop through collection, compairng max_search with searches of other keywords in collection; be too complicated
-  to ue a prioority queue but I can use a queue 
-*/
