@@ -9,5 +9,10 @@
     - Examples:
         - ```node app.js yoda```
         - ```node app.js luke```
+        - ```node app.js leaderboard```
+            - converts all records of star_wars_characters.csv into an array of objects.  The array is then displayed as a table by the following line of code:
+                ```javascript 
+                console.table(leaderboard);
+                ```
 
 
