@@ -9,7 +9,7 @@
         - ```node app.js yoda```
         - ```node app.js luke```
         - ```node app.js leaderboard```
-            - converts all records of star_wars_characters.csv into an array of objects.  The array is then displayed as a table by the following line of code:
+            - converts all records of star_wars_characters.csv (search-keyword, timesAppeared) into an array of objects.  The array is then displayed as a table by the following line of code:
                 ```javascript 
                 console.table(leaderboard); // leaderboard could have a length of 0 if no star wars character is found with a passed in search keyword
                 ```
