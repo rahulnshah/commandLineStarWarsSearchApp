@@ -1,5 +1,7 @@
 # commandLineStarWarsSearchApp
 
+(portfolio project)
+
 ## How to Use it: 
 1. Open up your favorite terminal and run ```npm install```. 
     - This command will by default look for a local package.json file to install packages from its list of **dependencies**. 
